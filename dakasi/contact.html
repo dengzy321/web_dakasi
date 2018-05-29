@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/hmf_style.css" rel="stylesheet">
+    <link href="css/subpage.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/messages_zh.js"></script>
+    <script src="js/contact.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=v9L9qfWfUtixMz28kKSnksoSZiWPGip4"></script>
+</head>
+<body>
+
+<div style="background-color: #f8f8f8;width: 100%">
+    <nav class="navbar navbar-default container" role="navigation">
+        <div class="container-fluid">
+            <div><a class="navbar-brand" href="#">大卡司官网</a></div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right" id="navbar">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="brand.html">品牌介绍</a>
+                        <ul>
+                            <li><a href="">下拉菜单1</a></li>
+                            <li><a href="">下拉菜单2</a></li>
+                            <li><a href="">下拉菜单3</a></li>
+                            <li><a href="">下拉菜单4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product.html">产品展示</a>
+                        <ul>
+                            <li><a href="">下拉菜单1</a></li>
+                            <li><a href="">下拉菜单2</a></li>
+                            <li><a href="">下拉菜单3</a></li>
+                            <li><a href="">下拉菜单4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="store.html">门店展示</a>
+                        <ul>
+                            <li><a href="">下拉菜单1</a></li>
+                            <li><a href="">下拉菜单2</a></li>
+                            <li><a href="">下拉菜单3</a></li>
+                            <li><a href="">下拉菜单4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="join.html">招商加盟</a>
+                        <ul>
+                            <li><a href="">下拉菜单1</a></li>
+                            <li><a href="">下拉菜单2</a></li>
+                            <li><a href="">下拉菜单3</a></li>
+                            <li><a href="">下拉菜单4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">新闻资讯</a>
+                        <ul>
+                            <li><a href="">下拉菜单1</a></li>
+                            <li><a href="">下拉菜单2</a></li>
+                            <li><a href="">下拉菜单3</a></li>
+                            <li><a href="">下拉菜单4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="header-img"><img src="image/public.jpg"></div>
+
+<section class="crumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">大卡司DAKASI官方网站</div>
+            <div class="visible-md visible-lg col-md-6 col-lg-6">
+                <ol class="breadcrumb pull-right" style="margin-bottom: 0">
+                    <li>当前位置</li>
+                    <li><a href="index.html">主页</a></li>
+                    <li class="active">联系我们</li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section-contact">
+    <div class="container">
+        <figure>
+            <div class="mapheader col-xs-12">
+                <span>联系我们<small>Contact us</small></span>
+            </div>
+            <!--此处发地图-->
+            <div class="map">
+                <div id="map"></div>
+            </div>
+            <script src="js/map.js"></script>
+            <!--此处发地图-->
+        </figure>
+        <figure>
+            <div class="mapheader">
+                <span>在线留言<small>Online Message</small></span>
+                <p style="margin-top: 15px">——留下您宝贵的意见，或者问题，我们会及时与您解决</p>
+            </div>
+            <div class="mapheader" style="margin-bottom: 100px">
+                <div class="row">
+                    <div class="mess col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <form id="validateForm" method="get" action="" ng-app="">
+                            <div class="col-md-4 col-lg-4 mess-font" style="margin-top: 39px">您的姓名 / Name：</div>
+                            <div class="col-md-8 col-lg-8 intxt" style="margin-top: 39px"><input type="text" name="name" id="name" placeholder="请输入您的姓名">
+                            </div>
+                            <div class="col-md-4 col-lg-4 mess-font">性别 / sex ：</div>
+                            <div class="col-md-8 col-lg-8 intxt-sex"><input type="radio" name="sex" id="sex">男<input type="radio" name="sex" id="">女
+                            </div>
+                            <div class="col-md-4 col-lg-4 mess-font">联系方式 / phone ：</div>
+                            <div class="col-md-8 col-lg-8 intxt"><input type="text" maxlength="11" name="phone" id="phone" placeholder="请输入您的手机号码"></div>
+                            <div class="col-md-4 col-lg-4 mess-font">所在地址/address ：</div>
+                            <div class="col-md-8 col-lg-8 intxt"><input type="text" name="address" id="address" placeholder="请输入您的所在地址"></div>
+                            <div class="col-md-4 col-lg-4 mess-font">邮箱 / email ：</div>
+                            <div class="col-md-8 col-lg-8 intxt"><input type="email" name="email" id="email" placeholder="请输入您的邮箱"></div>
+                            <div class="col-md-4 col-lg-4 mess-font">获取品牌信息渠道：</div>
+                            <div class="col-md-8 col-lg-8 intxt-sex"><input type="checkbox" id="checkbox" name="checkbox" ng-model="myShow"></div>
+                            <fieldset id="newsletter_topics" class="col-md-12 col-lg-12" style="margin:0;" ng-show="myShow">
+                                <legend>渠道 (至少选择两个)</legend>
+                                <label for="topic_new">
+                                    <input type="checkbox" id="topic_new" value="marketflash" name="topic[]"> 新闻
+                                </label>
+                                <label for="topic_zazi">
+                                    <input type="checkbox" id="topic_zazi" value="fuzz" name="topic[]"> 杂志
+                                </label>
+                                <label for="topic_int">
+                                    <input type="checkbox" id="topic_int" name="topic[]"> 网上
+                                </label>
+                                <label for="topic_tout">
+                                    <input type="checkbox" id="topic_tout" name="topic[]"> 头条
+                                </label>
+                                <label for="topic_weixin">
+                                    <input type="checkbox" id="topic_weixin" name="topic[]"> 微信
+                                </label>
+                                <label for="topic_zmt">
+                                    <input type="checkbox" id="topic_zmt" name="topic[]"> 自媒体
+                                </label>
+                                <label for="topic" class="error" style="display:none">至少选择两个</label>
+                            </fieldset>
+                            <div class="col-lg-12 mess-font">留言 / leave word：</div>
+                            <div class="col-lg-12"><textarea class="textarea" rows="5" placeholder="请留下您对我们的建议,或者遇到的问题我们会及时与您解决"></textarea></div>
+                            <div class="col-lg-12 mess-submit"><input type="submit" name="submit" value="提交"></div>
+                        </form>
+                    </div>
+                    <div class="mess mess-con col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">
+                            <img src="image/mess-and.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+                            <img src="image/mess-bg.png" style="width: 100%">
+                            <div class="mess-con-top">
+                                <p class="mess-p1">总部地址</p>
+                                <p class="mess-p2">广东省广州市番禹区禺山西路329号海伦堡创意园4座1栋2层</p>
+                                <p class="mess-p3">咨询热线</p>
+                                <p class="mess-p4"> 400-800-2295</p>
+                            </div>
+                            <p class="mess-p5"> 想了解更多关于我们的咨询，可以关注我们的公司公众号</p>
+                            <div class="weixin"><img src="image/weixin.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </figure>
+    </div>
+</section>
+
+<section class="section-eight">
+    <div class="container">
+        <div class="row">
+            <figure class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="image/1.png">
+                <h5>8年品牌运营经验</h5>
+                <p>8年品牌运营经验
+                    <small>大卡司公司成立于2008年，拥有8年品牌运营实战经验！</small>
+                </p>
+            </figure>
+            <figure class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="image/2.png">
+                <h5>8年品牌运营经验</h5>
+                <p>8年品牌运营经验
+                    <small>大卡司公司成立于2008年，拥有8年品牌运营实战经验！</small>
+                </p>
+            </figure>
+            <figure class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="image/3.png">
+                <h5>8年品牌运营经验</h5>
+                <p>8年品牌运营经验
+                    <small>大卡司公司成立于2008年，拥有8年品牌运营实战经验！</small>
+                </p>
+            </figure>
+            <figure class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="image/4.png">
+                <h5>8年品牌运营经验</h5>
+                <p>8年品牌运营经验
+                    <small>大卡司公司成立于2008年，拥有8年品牌运营实战经验！</small>
+                </p>
+            </figure>
+            <figure class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="image/5.png">
+                <h5>8年品牌运营经验</h5>
+                <p>8年品牌运营经验
+                    <small>大卡司公司成立于2008年，拥有8年品牌运营实战经验！</small>
+                </p>
+            </figure>
+            <figure class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="image/6.png">
+                <h5>8年品牌运营经验</h5>
+                <p>8年品牌运营经验
+                    <small>大卡司公司成立于2008年，拥有8年品牌运营实战经验！</small>
+                </p>
+            </figure>
+            <figure class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="image/7.png">
+                <h5>8年品牌运营经验</h5>
+                <p>8年品牌运营经验
+                    <small>大卡司公司成立于2008年，拥有8年品牌运营实战经验！</small>
+                </p>
+            </figure>
+            <figure class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="image/8.png">
+                <h5>8年品牌运营经验</h5>
+                <p>8年品牌运营经验
+                    <small>大卡司公司成立于2008年，拥有8年品牌运营实战经验！</small>
+                </p>
+            </figure>
+            <figure class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="image/9.png">
+                <h5>8年品牌运营经验</h5>
+                <p>8年品牌运营经验
+                    <small>大卡司公司成立于2008年，拥有8年品牌运营实战经验！</small>
+                </p>
+            </figure>
+            <figure class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="image/10.png">
+                <h5>8年品牌运营经验</h5>
+                <p>8年品牌运营经验
+                    <small>大卡司公司成立于2008年，拥有8年品牌运营实战经验！</small>
+                </p>
+            </figure>
+            <figure class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="image/11.png">
+                <h5>8年品牌运营经验</h5>
+                <p>8年品牌运营经验
+                    <small>大卡司公司成立于2008年，拥有8年品牌运营实战经验！</small>
+                </p>
+            </figure>
+            <figure class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="image/12.png">
+                <h5>8年品牌运营经验</h5>
+                <p>8年品牌运营经验
+                    <small>大卡司公司成立于2008年，拥有8年品牌运营实战经验！</small>
+                </p>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<div id="ReturnTop">
+    <div class="ReturnTop2"></div>
+</div>
+<script src="js/ReturnTop.js"></script>
+
+<div class="footer">
+    <div class="container">
+        <div class="row footer-ome">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h3>联系我们 Contact US</h3>
+                <div>
+                    <ul>
+                        <li class="footer-ome1">13169412394</li>
+                        <li class="footer-ome2">24 Hours 服务</li>
+                        <li class="footer-ome3">1950264537@qq.com</li>
+                        <li class="footer-ome4"> 1950264537</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+        </div>
+        <div class="row footer-two">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <p>Copyright © 2016-2017 大卡司官网 版权所有</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

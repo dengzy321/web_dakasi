@@ -1,0 +1,100 @@
+/*头部开始*/
+.container{
+    border: 0;
+    margin-top: 10px;
+}
+.navbar-right>li>a{
+    padding: 20px;
+}
+.navbar-brand{
+    padding: 20px;
+}
+/*头部结束*/
+
+/*底部表格开始*/
+.section-eight .row{
+    border: solid #e6e6e6;
+    border-width: 1px 0 0 1px;
+    line-height: 0;
+}
+.section-eight figure{
+    text-align: center;
+    border: solid #e6e6e6;
+    border-width: 0 1px 1px 0;
+    margin-top: 0;
+    padding: 40px 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.section-eight figure h5{
+    margin-top: 22px;
+}
+.section-eight figure p{
+    position: absolute;
+    opacity: 0;
+    display: block;
+    overflow: hidden;
+    line-height: 40px;
+    width: 100%;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+.section-eight figure:hover{
+    background-color: #666666;
+}
+.section-eight figure:hover p{
+    opacity: 1;
+    color: #eeeeee;
+}
+/*底部表格结束*/
+
+/*底部开始*/
+.footer{
+    background-image: url(../image/bg-5.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+.footer-ome{
+    margin-top: 40px;
+}
+.footer h3{
+    color: #FFF;
+    margin: 30px 0;
+}
+.footer-ome ul{
+    color: #919399;
+    list-style: none;
+    padding:20px 0;
+    margin-top: -30px;
+
+}
+.footer-ome ul li{
+    margin-top: 8px;
+
+}
+.footer-ome ul li{
+    background-image: url(../image/bg-footer.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.footer-ome1{
+    background-position: 0 0;
+}
+.footer-ome2{
+    background-position: 0 -30px;
+}
+.footer-ome3{
+    background-position: 0 -60px;
+}
+.footer-ome4{
+    background-position: 0 -90px;
+}
+.footer-two{
+    border-top: #666666 1px solid;
+    padding: 30px 0;
+    color: #919399;
+}
+/*底部结束*/

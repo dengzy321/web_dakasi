@@ -1,0 +1,526 @@
+.carousel-control.left {
+
+    background-image: none;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-control.right {
+    left: auto;
+    right: 0;
+
+    background-image: none;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+body {
+    position: relative;
+}
+
+@media screen and (max-width: 500px) {
+    #navbar {
+        position: absolute;
+        background-color: #1ad280;
+        color: #eeeeee;
+        text-align: center;
+        z-index: 100;
+        width: 100%;
+    }
+    .ReturnTop2{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/*导航栏 样式 开始*/
+
+#navbar>li{
+    position: relative;
+}
+
+#navbar li ul {
+    width: 96px;
+    position: absolute;
+    z-index: 100;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: none;
+    background-color: #f7f7f7;
+}
+
+#navbar li ul a {
+    display: block;
+    padding: 10px;
+}
+
+#navbar li ul li {
+    display: block;
+    padding: 0;
+}
+
+/*导航栏下拉菜单 开始*/
+
+#navbar li ul li:last-child{
+    margin-bottom: 3px;
+}
+
+#navbar ul li{
+    text-align: center;
+}
+
+#navbar ul li:hover{
+    background-color: #d2b449;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+}
+
+/*导航栏下拉菜单 结束*/
+/*导航栏 样式 结束*/
+
+/*!*导航栏 样式 开始*!
+#navbar>li{
+    position: relative;
+}
+
+#navbar li ul{
+    width: 96px;
+    position: absolute;
+    z-index: 100;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: none;
+    background-color: #f7f7f7;
+}
+
+#navbar li ul a{
+    display: block;
+}
+
+#navbar li ul li{
+    display: block;
+    padding: 0;
+}
+
+!*导航栏下拉菜单 开始*!
+
+#navbar li ul li:last-child{
+    margin-bottom: 3px;
+}
+
+#navbar ul li{
+    text-align: center;
+}
+
+#navbar ul li:hover{
+    background-color: #d2b449;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+}
+
+!*导航栏下拉菜单 结束*!
+
+!*导航栏 样式 结束*!*/
+
+/*返回顶部代码段*/
+#ReturnTop{
+    position: fixed;
+    right: 11%;
+    bottom: 30px;
+    display: none;
+    z-index: 100;
+}
+.ReturnTop2{
+    height: 60px;
+    width: 60px;
+    background: rgba(235, 119, 104, 0.8) url(../image/top.svg) no-repeat center 50%;
+}
+.ReturnTop2:hover{
+    background-color: #e86256;
+}
+/*返回顶部代码段*/
+
+.nav-active {
+
+}
+
+section {
+    padding: 50px 0 60px 0;
+}
+
+.container > .row > article {
+    padding: 15px;
+}
+
+.section-ome h4 {
+    background-repeat: no-repeat;
+    padding-left: 80px;
+    line-height: 30px;
+}
+
+.section-ome .row {
+    margin-top: 20px;
+}
+
+.section-ome small {
+    color: #777;;
+}
+
+.section-ome article p {
+    padding-top: 20px;
+    color: #777;;
+}
+
+.s-web {
+    background-image: url(../image/s-web.png);
+}
+
+.s-yy {
+    background-image: url(../image/s-yy.png);
+}
+
+.s-yx {
+    background-image: url(../image/s-yx.png);
+}
+
+.s-pp {
+    background-image: url(../image/s-pp.png);
+}
+
+.section-two {
+    background-image: url(../image/bg-1.jpg);
+    background-repeat: repeat;
+    text-align: center;
+}
+
+.section-two h2 {
+    color: #eeeeee;
+}
+
+.section-two .section-two-button img {
+    width: 100%;
+    height: auto;
+    border: #eeeeee solid 15px;
+    transition: 0.3s;
+}
+
+.section-two-button {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+.section-two-button .row .col-md-4 {
+    margin: 20px 0 20px 0;
+}
+
+.section-two .section-two-button img:hover{
+    transform: scale(1.1)
+}
+
+.section-three {
+    background-image: url(../image/bg-2.gif);
+    background-repeat: repeat;
+    text-align: center;
+}
+
+.section-three .row figure {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.section-three .row figure figcaption {
+    border-radius: 50%;
+    border: #0b6fa2 solid 1px;
+    width: 136px;
+    height: 136px;
+    vertical-align: center;
+    border-right-color: #ff0006;
+    border-bottom-color: #ff0006;
+    display: inline-block;
+    transition: 1s;
+}
+
+.f1:hover {
+    background-image: url(../image/o1.png);
+    transform: rotate(360deg);
+}
+
+.f2:hover {
+    background-image: url(../image/o2.png);
+    transform: rotate(360deg);
+}
+
+.f3:hover {
+    background-image: url(../image/o3.png);
+    transform: rotate(360deg);
+}
+
+.f4:hover {
+    background-image: url(../image/o4.png);
+    transform: rotate(360deg);
+}
+
+.f5:hover {
+    background-image: url(../image/o5.png);
+    transform: rotate(360deg);
+}
+
+.f6:hover {
+    background-image: url(../image/o6.png);
+    transform: rotate(360deg);
+}
+
+#carousel-example-class {
+    margin: 40px 0 40px 0;
+}
+
+/*No 4开始*/
+
+.rollphotos #scroll-con figure{
+    margin-top: 50px;
+    display: none;
+}
+
+#scroll-con h3{
+    border-bottom: 1px #666666 solid;
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+
+#scroll-con p{
+    font-size: 20px;
+    color: #666666;
+    margin: 0 0 10px;
+}
+
+.scroll-con-rigth{
+    padding-left: 50px;
+}
+
+#ISL_Cont_1 .box img{
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin:10px 0 10px 18px;
+    transition: 0.3s;
+}
+
+#ISL_Cont_1 .box img:hover{
+    width: 140px;
+    height: 140px;
+    margin-left: 13px;
+    background: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 10px #666;
+}
+
+.section-four  .scroll-con-img{
+    overflow: hidden;
+    padding: 0  ;
+}
+
+.section-four  .scroll-con-img img{
+    transition: 0.3s;
+}
+.section-four  .scroll-con-img:hover img{
+    transform: scale(1.1);
+}
+
+/*No 4结束*/
+
+
+
+.section-five {
+    text-align: center;
+}
+
+.section-five figure {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.section-five figure h4 {
+    padding: 20px 0 0 0;
+    margin-bottom: -20px;
+}
+
+.section-five a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.section-five figure img {
+    width: 100%;
+    height: auto;
+
+    transition: 0.5s;
+}
+
+.section-five figure img:hover {
+    box-shadow: #666 0 0 15px;
+}
+
+@media screen and (max-width: 300px) {
+    .section-five figure img:hover {
+        box-shadow: none;
+    }
+}
+
+.section-five button {
+    margin-top: 40px;
+    padding: 15px 20px 15px 20px;
+    background-color: #666666;
+    border-color: #666666;
+}
+
+.section-six {
+    background-image: url(../image/bg-4.jpg);
+    background-repeat: repeat-x;
+    background-color: #666666;
+    color: rgba(255, 255, 255, 0.70)
+}
+
+.section-six .container p {
+    padding: 20px 0 20px 0;
+    text-indent: 2em;
+}
+
+img {
+    cursor: pointer;
+}
+
+/*No 6结束*/
+
+.section-seven .container>div:first-child{
+    border-bottom: #e5e5e5 solid 1px;
+    margin-bottom: 30px;
+}
+
+.section-seven .container>div:first-child h2{
+    margin-bottom: 30px
+}
+
+.fig{
+    overflow: hidden;
+}
+
+.fig figcaption{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fig figcaption span{
+    float: right;
+}
+
+.fig figcaption a{
+    color: black;
+    text-decoration: none;
+}
+
+.fig figcaption a:hover{
+    color: #d20618;
+}
+
+#no7_box{
+    border: 1px solid #CCC;
+    border-top: 4px solid chocolate;
+}
+
+#no7_box ul{
+    text-align: center;
+    list-style: none;
+    height: 40px;
+    background: linear-gradient(#d2b449,#FFFFFF);
+    border-bottom: 1px solid #CCC;
+}
+
+#no7_box ul li{
+    margin-left: 10px;
+    padding: 8px;
+    float: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#no7_box #no7_content{
+    clear: both;
+}
+
+#no7_box #no7_content div{
+    height: 350px;
+    display: none;
+}
+
+#igs {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 700px){
+    #igs{
+        margin-bottom: 350px;
+    }
+}
+
+#igs p{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#igs a{
+    color: black;
+    text-decoration: none;
+}
+
+.ig{
+    position: absolute;
+}
+
+.no7_active{
+    background: linear-gradient(#FFFFFF,#d2b449);
+    color: #d20618;
+}
+
+#tabs {
+    position: absolute;
+    list-style: none;
+    background-color: rgba(255, 255, 255, .5);
+    right: 0;
+    margin-top: 0;
+    border-radius: 10px;
+    padding: 5px 0 5px 5px;
+}
+
+.tab {
+    float: left;
+    text-align: center;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 4px;
+    border-radius: 100%;
+    background-color: rgb(200, 100, 150);
+}
+
+.bg {
+    background-color: #f00;
+}
+
+#igs img {
+    width: 100%;
+    height: auto;
+}
+
+/*No 7结束*/
